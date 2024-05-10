@@ -19,7 +19,7 @@ export default function Location({ onSearch, weather, bg }) {
   return (
     <div className="lg:h-screen lg:w-[65%] w-full flex flex-col items-center justify-center gap-1 lg:p-2">
       {/* Location */}
-      <div className="w-full min-h-[60vh] lg:h-[70vh] lg:rounded-xl flex flex-col justify-start gap-4 lg:gap-0 lg:justify-between p-4 relative overflow-hidden">
+      <div className="w-full min-h-[70vh] lg:h-[70vh] lg:rounded-xl flex flex-col justify-start gap-4 lg:gap-0 lg:justify-between p-4 relative overflow-hidden">
         <img
           src={`${bg()}`}
           className="object-cover absolute inset-0 w-full h-full z-10 opacity-80"
