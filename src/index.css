@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+
+* {
+  font-family: "Commissioner", sans-serif;
+  text-decoration: none;
+  color: #fafafa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  background-color: #202020;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1.6399rem + 0.5505vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.1766rem + 0.367vw, 1.75rem);
+}
+
+.unit-change {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset,
+    0 -1px 5px rgba(255, 255, 255, 0.5) inset;
+}
+
+.unit-change {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset,
+    0 1px 5px rgba(0, 0, 0, 0.5) inset;
 }
