@@ -48,7 +48,7 @@ export default function Location({ onSearch, weather, bg }) {
 
           {weather && weather.city && (
             <h1 className="p-1 flex items-center gap-[1ch] justify-center lg:justify-start relative z-20">
-              <Map /> {weather.city.name}, {weather.city.country}
+              <Map /> {weather.city.name}
             </h1>
           )}
         </div>
